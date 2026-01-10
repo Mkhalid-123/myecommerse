@@ -1,0 +1,571 @@
+nav{
+    background-color: blue;
+    width: 100vw;
+    height: 80px;
+}*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}nav{
+    display: flex;
+    justify-content: space-between;
+}#nav1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    width: 60%;
+}
+#nav2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 15%;
+    font-size: 20px;
+}.btnn{
+    margin-right: 10px;
+ font-size: 15px;
+ font-weight: 600;
+ border: transparent;
+ background-color: transparent;
+ color: white;
+}@media(max-width:700px) and (min-width:443px){
+    #nav1{
+        width: 75%;
+    }
+    
+    #nav2{
+        width: 25%;
+    }
+    
+}@media(max-width:443px){
+    nav {
+    padding: 10px;
+    background-color: blue;
+    width: 100vw;
+    height: 125px;
+}#nav1{
+    flex-direction: column;
+}#nav2{
+    width: 30%;
+}.btn{
+    margin-right: 10px;
+}#btn{
+    display: flex;
+    width: 156px;
+}
+}
+#btn1{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}#h{
+    color: white;
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}#h1{
+    width: 350px;
+    font-size: 150%;
+    text-align: center;
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}#btn1{
+    width: 100px;
+    height: 40px;
+}#btn{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}@media(max-width:500px){
+  #h{
+  padding-left: 10px;
+  }
+}#btn1{
+    background-color: blue;
+    font-weight: 700;
+    color: white;
+    border: transparent;
+}#cat{
+   background-color: #F9FAFB;
+    width: 100vw;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}#cat2{
+    background-color: white;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}.img{
+ width: 30%;
+ height: 70%;
+
+ display: flex;
+ justify-content: end;
+ flex-direction: column;
+ align-items: center;
+}#img{
+    width: 100%;
+    height: 80%;
+    background-color: red;
+
+}#cat1 h1{
+ font-size: 300%;   
+}@media(max-width:800px) and (min-width:460px){
+    #img{
+        width: 117%;
+    }
+    #cat2 {
+     flex-direction: column;
+    width: 96%;
+    height: 612px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}@media(max-width:460px){
+#img {
+    width: 215%;
+    height: 80%;
+    background-color: red;
+}
+#cat2{
+   flex-direction: column;
+    width: 96%;
+    height: 612px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+#cat1 h1 {
+    font-size: 200%;
+}
+#cat1{
+    padding: 30px;
+}
+}#login{
+    width: 100vw;
+    height: 655px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5vw;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#login1{
+    width: 300px;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}#l2{
+    display: flex;
+    flex-direction: column;
+}#l3{
+    display: flex;
+    flex-direction: column;
+}.input{
+   border: transparent;
+   border-bottom: 1px solid black;
+   margin: 5px;
+  width: 90%;
+  height: 40px;
+}.btn1{
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+}@media(max-width:338px){
+    #login1{
+    width: 250px;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+}a{
+    color: white
+}body{
+    overflow-x: hidden;
+}
+#shoes{
+    background-color: #F9FAFB;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#si{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}#jackets{
+    background-color: #F9FAFB;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#Electronic{
+    background-color: #F9FAFB;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.simg{
+    width: 28%;
+    height: 41%;
+    color:black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}.simage{
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+}@media (max-width:670px){
+    #si{
+    height: 600px;
+     width: 251%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    }#h1s{
+        padding-left: 6%;
+    }
+#jackets{
+    width: 100vw;
+    height: 2229px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+#cartbtn{
+       align-items: center;
+    justify-content: start;
+    display: flex;
+    position: absolute;
+    height: 70px;
+    width: 200px;
+}
+/* From Uiverse.io by Codecite */ 
+.btn {
+  --fancy-button-gradient-0: blue;
+  --fancy-button-gradient-50: blue;
+  --fancy-button-gradient-100: blue;
+  --fancy-button-inner-shadow-top: rgba(233, 209, 255, 0.2);
+  --fancy-button-inner-shadow-top-lg: rgba(9, 12, 60, 0.1);
+  --fancy-button-inner-shadow-bottom: rgba(137, 222, 246, 0.3);
+  --fancy-button-shine-top: #e9d1ff;
+  --fancy-button-shine-bottom: #adfff9;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-shadow: 0px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 25px;
+  color: #fff;
+  background-image: linear-gradient(
+    to bottom,
+    var(--fancy-button-gradient-0) 0%,
+    var(--fancy-button-gradient-50) 50%,
+    var(--fancy-button-gradient-100) 100%
+  );
+  box-shadow:
+    0px 4px 12px rgba(9, 12, 60, 0.15),
+    0px 2px 8px rgba(9, 12, 60, 0.15),
+    0px 1px 3px var(--fancy-button-inner-shadow-top-lg),
+    inset 0px 1px 1px var(--fancy-button-inner-shadow-top),
+    inset 0px -1px 3px var(--fancy-button-inner-shadow-bottom);
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  will-change: transform;
+}
+
+.btn:before {
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--fancy-button-shine-top);
+  width: 96px;
+  height: 6px;
+  top: -3px;
+  opacity: 0.6;
+  filter: blur(6px);
+  transition: opacity 0.25s;
+}
+
+.btn:after {
+  inset: 0;
+  background-size: cover;
+  z-index: 2;
+  opacity: 0.3;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+  border-radius: inherit;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    var(--fancy-button-shine-top),
+    transparent 8px
+  );
+  background-position: 0 -6px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.btn span:before,
+.btn span:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: var(--fancy-button-shine-bottom);
+  transition:
+    opacity 0.25s,
+    transform 0.25s;
+  will-change: transform;
+}
+
+.btn span:before {
+  width: 92px;
+  height: 8px;
+  bottom: -4px;
+  opacity: 0.75;
+  filter: blur(6px);
+}
+
+.btn span:after {
+  width: 112px;
+  height: 1px;
+  bottom: 0;
+  opacity: 0.9;
+  filter: blur(1px);
+}
+
+.btn:hover span:before {
+  opacity: 0.8;
+}
+
+.btn:hover span:before {
+  transform: translateX(-50%) scale(1.25);
+}
+
+.btn:hover span:after {
+  opacity: 1;
+}.btn{
+    height: 50px;
+    width: 130px;
+    font-weight: 800;
+}.btn {
+  visibility: hidden;
+  position: absolute;  /* so it can hover on top of the image */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: red; /* your button style */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.simg {
+  position: relative;  /* parent for absolute positioning */
+}
+
+.simg:hover .btn {
+  visibility: visible;
+}
+
+/* Image hover filter */
+.simg:hover .simage {
+  filter: grayscale(100%) brightness(0.6); /* this only affects the image */
+}
+
+.btn{
+ visibility: hidden;  
+ font-size: 15px;
+ width: 150px;
+}
+.simg:hover .btn{
+  visibility: visible;
+}c{
+        bottom: 26px;
+    position: relative;
+    left: 121px;
+}
+.simg{
+    color: blue;
+}#card {
+   z-index: 1;
+    top: 15%;
+    left: 32%;
+    background-color: white;
+    width: 31%;
+    height: 60%;
+    position: fixed;
+    border-radius: 30px;
+   visibility: hidden;
+   border: 5px solid black;
+}#pc{
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-between;
+    padding: 6%;
+    border-bottom: 1px solid black;
+}#text{
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+}#buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}#buybtn{
+    width: 110px;
+    height: 40px;
+    font-weight: 800;
+}#pic{
+    width: 1735px;
+    height: 200px;
+    margin-right: 10px;
+    background-color: red;
+}@media(max-width:1275px) and (min-width:909px){
+    #buy{
+     margin-top: 18px;
+    }#text{
+        font-size: 12px;
+    }
+}
+@media(max-width:909px) and (min-width:600px){
+#pic{
+    margin-bottom: 16px;
+    width: 200px;
+}
+#card{
+    height: 77%;
+    width: 40%;
+}#text{
+    flex-direction: column;
+    font-size: 12px;
+}#buy{
+    margin-top: 10px;
+}
+}
+@media(max-width:600px){
+    #card{
+        left: 16%;
+        height: 77%;
+        width: 71%;
+    }
+    #text{
+    flex-direction: column;
+    font-size: 12px;
+    }
+    #pic{
+        width: 90%;
+         margin-bottom: 16px;
+    }
+    #buy{
+        margin-top: 18px;
+    }
+}v{
+    width: 100px;
+    position: relative;
+    left: 87px;
+    top: 45px;
+    visibility: hidden;
+}.simg:hover v{
+  visibility: visible;
+  z-index: 10;
+}#fashion{
+    background-color:#F9FAFB;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}#fmain{
+    background-color: white;
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}#f1{
+    background-color: white;   
+    width: 100%;
+    height: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+}#f2{
+   background-image:url(https://media.istockphoto.com/id/2195666137/photo/stylish-mature-woman-with-short-hairstyle-walks-wearing-summer-beige-maxi-dress-and-large.webp?a=1&b=1&s=612x612&w=0&k=20&c=u8D69cD8jWtn8gIK7NMXSbW2wQxsFSQ3HINemA4Ko3A=) ;
+   background-size: cover;
+    width: 100%;
+    height: 590px;
+}
