@@ -302,16 +302,7 @@ nav{
     }#h1s{
         padding-left: 6%;
     }
-    #fmain{
-            background-color: white;
-    width: 80%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    top: 699px;
-    }#f2{
+   #f2{
         background-size: 100% 100%;
     }
 #jackets{
@@ -604,32 +595,6 @@ nav{
 }.simg:hover v{
   visibility: visible;
   z-index: 10;
-}#fashion{
-    background-color:#F9FAFB;
-    width: 100vw;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}#fmain{
-    background-color: white;
-    width: 80%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}#f1{
-    background-color: white;   
-    width: 100%;
-    height: 100px;
-    color: black;
-    display: flex;
-    align-items: center;
-}#f2{
-   background-image:url(https://media.istockphoto.com/id/2195666137/photo/stylish-mature-woman-with-short-hairstyle-walks-wearing-summer-beige-maxi-dress-and-large.webp?a=1&b=1&s=612x612&w=0&k=20&c=u8D69cD8jWtn8gIK7NMXSbW2wQxsFSQ3HINemA4Ko3A=) ;
-   background-size: cover;
-    width: 100%;
-    height: 590px;
 }body{
     overflow-x: hidden;
 }
