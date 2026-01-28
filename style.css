@@ -34,6 +34,9 @@ nav{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
     #nav1{
         width: 75%;
     }
@@ -46,6 +49,9 @@ nav{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
     nav {
     padding: 10px;
     background-color: blue;
@@ -95,6 +101,9 @@ nav{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
   #h{
   padding-left: 10px;
   }
@@ -138,6 +147,9 @@ nav{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
     #img{
         width: 117%;
     }
@@ -151,6 +163,9 @@ nav{
 }
 }@media(max-width:460px){
 body{
+    overflow-x: hidden;
+}
+html{
     overflow-x: hidden;
 }
 #img {
@@ -214,6 +229,9 @@ body{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
     #login1{
     width: 250px;
     height: 80%;
@@ -225,6 +243,9 @@ body{
 }a{
     color: white
 }body{
+    overflow-x: hidden;
+}
+html{
     overflow-x: hidden;
 }
 #shoes{
@@ -277,6 +298,9 @@ body{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
     #si{
     height: 600px;
      width: 251%;
@@ -522,6 +546,9 @@ body{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
     #buy{
      margin-top: 18px;
     }#text{
@@ -532,6 +559,9 @@ body{
     body{
     overflow-x: hidden;
 }
+    html{
+        overflow-x: hidden;
+    }
 #pic{
     margin-bottom: 16px;
     width: 200px;
@@ -548,6 +578,9 @@ body{
 }
 @media(max-width:600px){
 body{
+    overflow-x: hidden;
+}
+html{
     overflow-x: hidden;
 }
     #card{
@@ -576,5 +609,8 @@ body{
   visibility: visible;
   z-index: 10;
 }body{
+    overflow-x: hidden;
+}
+html{
     overflow-x: hidden;
 }
