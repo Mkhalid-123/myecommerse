@@ -75,10 +75,10 @@ forget.addEventListener("click", () => {
 let l = document.querySelector("#login");
 let p = document.querySelector("p1");
 p.addEventListener("click", () => {
-    l.style.visibility = "visible"
+   l.style.display = "none";
 })
 document.querySelector("#cross").addEventListener("click", () => {
-    l.style.visibility = "hidden"
+    l.style.display = "none";
 })
 // card section
 let btn = document.querySelectorAll(".btn");
