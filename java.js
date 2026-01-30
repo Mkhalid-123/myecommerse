@@ -105,7 +105,7 @@ v.forEach((e) => {
 })
 cofcard.addEventListener("click", () => {
     card.style.display = "none"
-    document.body.style.overflow = "visible"
+    document.body.style.overflow = "auto"
     btn.forEach((b) => {
         b.classList.remove("a");
         b.classList.add("btn");
