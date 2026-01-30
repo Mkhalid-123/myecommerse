@@ -23,7 +23,12 @@ nav{
     color: white;
     width: 15%;
     font-size: 20px;
-}.btnn{
+}body 
+{
+    scrollbar-width: none;
+}
+
+.btnn{
     margin-right: 10px;
  font-size: 15px;
  font-weight: 600;
