@@ -12,15 +12,11 @@ let forget = buttons[1];
 let h5 = document.querySelector("#h5");
 localStorage.setItem("Name", "");
 localStorage.setItem("Email", "");
-
 text.type = "password";
-
 loginBtn.addEventListener("click", (e) => {
     e.preventDefault();
-
     let t = text.value;
     let e1 = email.value;
-
     if (localStorage.getItem("Name") == "" && localStorage.getItem("Email") == "") {
         text.value = "";
         email.value = "";
@@ -75,10 +71,10 @@ forget.addEventListener("click", () => {
 let l = document.querySelector("#login");
 let p = document.querySelector("p1");
 p.addEventListener("click", () => {
-   l.style.display = "none";
+   l.style.visibility="visible";
 })
 document.querySelector("#cross").addEventListener("click", () => {
-    l.style.display = "none";
+    l.style.visibility="hidden";
 })
 // card section
 let btn = document.querySelectorAll(".btn");
@@ -99,7 +95,7 @@ v.forEach((e) => {
             b.classList.add("a")
 
         })
-        card.style.visibility = "visible"
+        card.style.display = "block"
         card.style.zIndex = "10"
         let img = e.parentElement.parentElement.nextElementSibling;
         let npci = getComputedStyle(img).backgroundImage;
@@ -108,7 +104,7 @@ v.forEach((e) => {
     })
 })
 cofcard.addEventListener("click", () => {
-    card.style.visibility = "hidden"
+    card.style.display = "none"
     document.body.style.overflow = "visible"
     btn.forEach((b) => {
         b.classList.remove("a");
