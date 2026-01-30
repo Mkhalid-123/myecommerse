@@ -15,6 +15,8 @@ nav{
     align-items: center;
   
     width: 60%;
+}body{
+    height: 5935px;
 }
 #nav2{
     display: flex;
@@ -23,11 +25,7 @@ nav{
     color: white;
     width: 15%;
     font-size: 20px;
-}body 
-{
-    scrollbar-width: none;
 }
-
 .btnn{
     margin-right: 10px;
  font-size: 15px;
