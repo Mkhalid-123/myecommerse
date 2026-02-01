@@ -623,4 +623,8 @@ body{
   position: relative;
   right: 17px;
   }
+}@media(max-width:420px){
+#card{
+    height: 81%;
+}
 }
