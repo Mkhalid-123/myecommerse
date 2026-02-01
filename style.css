@@ -15,8 +15,6 @@ nav{
     align-items: center;
   
     width: 60%;
-}body{
-    height: 6096px;
 }
 #nav2{
     display: flex;
@@ -616,4 +614,13 @@ html{
 }
 html{
     overflow-x: hidden;
+}@media(max-width:450px){
+body{
+    height: 6096px;
+}
+}@media(max-width:340px){
+  #cross{
+  position: relative;
+  right: 17px;
+  }
 }

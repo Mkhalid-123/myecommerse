@@ -85,7 +85,6 @@ let v = document.querySelectorAll("v");
 let v1 = document.querySelectorAll(".v1");
 v.forEach((e) => {
     e.addEventListener("click", () => {
-        // document.body.style.overflow = "hidden"
         v1.forEach((e1) => {
             e1.classList.remove("v1");
             e1.classList.add("a")
@@ -105,7 +104,6 @@ v.forEach((e) => {
 })
 cofcard.addEventListener("click", () => {
     card.style.display = "none"
-    // document.body.style.overflow = "hidden"
     btn.forEach((b) => {
         b.classList.remove("a");
         b.classList.add("btn");
