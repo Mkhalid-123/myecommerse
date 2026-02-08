@@ -94,6 +94,7 @@ v.forEach((e) => {
             b.classList.add("a")
 
         })
+        document.documentElement.style.overflow = "hidden"; 
         card.style.display = "block"
         card.style.zIndex = "10"
         let img = e.parentElement.parentElement.nextElementSibling;
@@ -104,6 +105,7 @@ v.forEach((e) => {
 })
 cofcard.addEventListener("click", () => {
     card.style.display = "none"
+    document.documentElement.style.overflow = "auto";
     btn.forEach((b) => {
         b.classList.remove("a");
         b.classList.add("btn");

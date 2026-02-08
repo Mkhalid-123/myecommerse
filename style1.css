@@ -27,4 +27,36 @@
 }.a{
     visibility: hidden;
     display: none;
+}@media(max-width  : 670px){
+    body{
+        height: 6535px;
+    }#footer{
+        top: 741px;
+        position: relative;
+        flex-direction: column;
+        height: 405px;
+        width: 100%;
+        display: flex;
+        font-size: 13px;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: black;
+        color: white;
+    }
+} @media(max-width : 450px){
+    #footer{
+                top: 749px;
+    }
+body{
+    height: 6588px;
+}
+}@media(max-width: 450px ) and (min-width:440px){
+    body{
+        height: 6685px;
+        scrollbar-width: none;
+        
+    }
+    #footer{
+        top:891px;
+    }
 }
