@@ -507,14 +507,13 @@ opacity 0.25s,
     left: 32%;
     background-color: white;
     width: 31%;
-    height: 60%;
+    height: 70%;
     position: fixed;
     border-radius: 30px;
     display: none;
     border: 5px solid black;
 }#pc{
     width: 100%;
-    font-size: 25px;
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
@@ -569,7 +568,7 @@ opacity 0.25s,
     width: 200px;
 }
 #card{
-    height: 77%;
+    height: 86%;
     width: 40%;
 }#text{
     flex-direction: column;
@@ -588,7 +587,7 @@ html{
 }
     #card{
         left: 16%;
-        height: 85%;
+        height: 90%;
         width: 71%;
     }
     #text{
