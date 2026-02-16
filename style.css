@@ -670,8 +670,8 @@ body{
 
 }@media(max-width:950px){
     #s{
-    background-color: aqua;
-    height: 400px;
+    background-color: white;
+    height: 80px;
     width: 100%;
     display: flex;
 
