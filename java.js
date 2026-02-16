@@ -122,5 +122,7 @@ buybtn.forEach((b) => {
     b.style.backgroundColor = "blue"
     b.style.color = "white"
 })
-
-
+let cartbtn=document.querySelector("#cartbtn");
+cartbtn.addEventListener("click",()=> {
+    console.log("hello")
+})

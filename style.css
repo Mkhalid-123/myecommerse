@@ -658,4 +658,24 @@ body{
     background-color: black;
     color: white;   
     }
+}@media(max-width:1330px){
+    #shop1{
+        width: 300px !important;
+    }
+  #m{
+    padding-top: 0px !important;
+  }#s{
+    padding-left: 10px;
+  }
+
+}@media(max-width:950px){
+    #s{
+    background-color: aqua;
+    height: 400px;
+    width: 100%;
+    display: flex;
+
+    }
+}#elements{
+    background-color: red;
 }
