@@ -1,6 +1,3 @@
-
-
-// select inputs (first = password, second = email)
 let inputs = document.querySelectorAll(".input");
 let text = inputs[0];   // password
 let email = inputs[1];  // email
@@ -78,73 +75,15 @@ p.addEventListener("click", () => {
 document.querySelector("#cross").addEventListener("click", () => {
     l.style.visibility="hidden";
 })
-// card section
-let btn = document.querySelectorAll(".btn");
-let pic = document.querySelector("#pic");
-let card = document.querySelector("#card");
-let cofcard = document.querySelector("n");
-let v = document.querySelectorAll("v");
-let v1 = document.querySelectorAll(".v1");
-v.forEach((e) => {
-    e.addEventListener("click", () => {
-        v1.forEach((e1) => {
-            e1.classList.remove("v1");
-            e1.classList.add("a")
-        })
-        btn.forEach((b) => {
-            b.classList.remove("btn")
-            b.classList.add("a")
-
-        })
-        document.documentElement.style.overflow = "hidden"; 
-        card.style.display = "block"
-        card.style.zIndex = "10"
-        let img = e.parentElement.parentElement.nextElementSibling;
-        let npci = getComputedStyle(img).backgroundImage;
-        pic.style.backgroundImage = npci;
-        pic.style.backgroundSize = "100% 100%"
-    })
-})
-cofcard.addEventListener("click", () => {
-    card.style.display = "none"
-    document.documentElement.style.overflow = "auto";
-    btn.forEach((b) => {
-        b.classList.remove("a");
-        b.classList.add("btn");
-    })
-    v1.forEach((e1) => {
-        e1.classList.add("v1");
-        e1.classList.remove("a")
-
-    })
-
-})
-let buybtn = document.querySelectorAll("#buybtn");
-buybtn.forEach((b) => {
-    b.style.backgroundColor = "blue"
-    b.style.color = "white"
-})
-let cartbtn=document.querySelector("#cartbtn");
-cartbtn.addEventListener("click",()=> {
-    console.log("hello")
-}) 
-
 let shop = document.querySelector("sup");
-let btna =  document.querySelectorAll(".btn");
-let arr=[];
-btna.forEach((e)=> {
-    e.addEventListener("click",()=> {
-        let i = e.parentNode.nextElementSibling;
-        let i2 = getComputedStyle(i).backgroundImage;
-        arr.push(i2);
-        localStorage.setItem("back", JSON.stringify(arr));
-        let count = parseInt(shop.innerText);
-        count++;
-        shop.innerText=count;
-        localStorage.setItem("count",count);
-
-    })
-})
-window.onload=()=> {
-    localStorage.clear();
-}
+let save;
+window.onload= ()=>{
+     save=localStorage.getItem('count');
+     shop.innerText=save;
+} 
+console.log(JSON.parse( localStorage.getItem("back")));
+let save2 = Number(save);
+console.log(save);
+// for(let  i = 0 ; i<save ; i++){
+//      console.log("i");
+// }

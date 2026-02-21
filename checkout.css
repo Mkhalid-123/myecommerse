@@ -1,6 +1,7 @@
 #personal_information{
     display: flex;
-    background-color: red;
+    background-color: white;
+    border-radius: 5px;
     flex-direction: column;
     height: 200px;
     justify-content: space-evenly;
