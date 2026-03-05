@@ -124,27 +124,39 @@ buybtn.forEach((b) => {
     b.style.backgroundColor = "blue"
     b.style.color = "white"
 })
+let price = 0;
 let cartbtn=document.querySelector("#cartbtn");
-cartbtn.addEventListener("click",()=> {
-    console.log("hello")
-}) 
-
 let shop = document.querySelector("sup");
 let btna =  document.querySelectorAll(".btn");
 let arr=[];
+let prce=[];
+if(sessionStorage.getItem("price")!==null){
+            price = sessionStorage.getItem("price");
+            price=Number(price);
+        }
 btna.forEach((e)=> {
     e.addEventListener("click",()=> {
+    let p=e.parentElement.nextElementSibling.nextElementSibling.innerText;
+     p = parseInt(p);
+    price = price + p;
+    sessionStorage.setItem("price",price)
+        if(sessionStorage.getItem("back")!==null){
+            arr=JSON.parse(sessionStorage.getItem('back'));
+        }
         let i = e.parentNode.nextElementSibling;
         let i2 = getComputedStyle(i).backgroundImage;
         arr.push(i2);
-        localStorage.setItem("back", JSON.stringify(arr));
+        sessionStorage.setItem("back", JSON.stringify(arr));
         let count = parseInt(shop.innerText);
         count++;
-        shop.innerText=count;
-        localStorage.setItem("count",count);
-
+        sessionStorage.setItem("count",count);
+        prce.push(p);
+        sessionStorage.setItem('eachp',JSON.stringify(prce));
+        shop.innerText=sessionStorage.getItem("count");
     })
 })
 window.onload=()=> {
-    localStorage.clear();
+    if (sessionStorage.getItem("count") !==null ){
+        shop.innerText=sessionStorage.getItem("count");
+    }
 }

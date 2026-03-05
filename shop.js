@@ -75,15 +75,83 @@ p.addEventListener("click", () => {
 document.querySelector("#cross").addEventListener("click", () => {
     l.style.visibility="hidden";
 })
+let newprice=Number(sessionStorage.getItem("price"));
 let shop = document.querySelector("sup");
 let save;
-window.onload= ()=>{
-     save=localStorage.getItem('count');
+let shop2 = document.querySelector("#shoping");
+save= sessionStorage.getItem('count');
      shop.innerText=save;
-} 
-console.log(JSON.parse( localStorage.getItem("back")));
-let save2 = Number(save);
-console.log(save);
-// for(let  i = 0 ; i<save ; i++){
-//      console.log("i");
-// }
+     let save2 = Number(save);
+let background= JSON.parse(sessionStorage.getItem("back"));
+for(let i = 0 ; i < save2;i++){
+    let eachp=JSON.parse(sessionStorage.getItem('eachp'));
+    let each = eachp[i];
+  let div1 = document.createElement("div");
+  let div2 = document.createElement("div");
+  div1.style.width="200px"
+  let btn=document.createElement("button");
+  btn.innerText="delete";
+
+  div1.appendChild(div2);
+  div1.appendChild(btn);
+  btn.style.height="30px"
+  div2.style.width="115px";
+  div2.style.height="70px ";
+  div1.style.margin='1px'
+  div2.style.backgroundImage=background[i];
+  div2.style.backgroundSize="100% 100%";
+  shop2.appendChild(div1);
+  div1.style.display="flex";
+  div1.style.justifyContent="spacebetween";
+  div1.style.width="100%";
+  div1.style.paddingLeft="1%"
+  div1.style.paddingRight="1%"
+  btn.addEventListener("click",()=> {
+    div1.remove();
+    newprice=newprice-each;
+   let newp= parseInt(sessionStorage.getItem('price'));
+    newp= newp-each;
+
+    sessionStorage.setItem('price',newp);
+    shop1.innerText=newprice;
+    total=total-each;
+    t.innerText=total;
+        if(newp===0){
+        s.innerText='0.00';
+        t.innerText='0.00';
+        console.log(t.innerText)
+    }
+    for(let i =0;i<background.length;i++){   
+   if (div2.style.backgroundImage===background[i]){
+    background.splice(i,1);
+    sessionStorage.setItem('back',JSON.stringify(background)); 
+    save--;
+    sessionStorage.setItem("count",save);
+    shop.innerText=save;
+   }
+   
+}
+
+})
+}
+
+let shop1= document.querySelector('#shop1').firstElementChild.nextElementSibling.firstElementChild.nextElementSibling;
+shop1.innerText=newprice;
+let  s=document.querySelector("#shop1").firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling;
+if(background.length>=1){
+s.innerText='100';
+} if(background.length>2){
+    s.innerText='200';
+} else if (background.length===0){
+    s.innerText='0.00';
+}
+let total = parseInt(shop1.innerText)+parseInt(s.innerText);
+let t = document.querySelector("#shop1").firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling;
+if(background.length===0){
+t.innerText='0';
+console.log(t.innerText)
+} else {
+t.innerText=total;
+}
+
+
