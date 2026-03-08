@@ -45,7 +45,7 @@
     }
 } @media(max-width : 450px){
     #footer{
-                top: 749px;
+         top: 749px;
     }
 body{
     height: 6588px;
@@ -72,7 +72,7 @@ body{
     padding-left: 24%;
     align-items: center;
 }#ss{
-    background-color: blue;
+    background-color: rgba(233, 209, 255, 0.2);;
     height: 400px;
     width: 100%;
     padding: 10px;
@@ -110,4 +110,4 @@ body{
     align-items: center;
     background-color: black;
     color: white;
-}
+} 

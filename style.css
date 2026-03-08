@@ -695,3 +695,13 @@ body{
     font-size: 84% !important;
 }   
 }
+@media(max-width:910px) and (min-width:670px){
+    #footer{
+    height: 226px;
+    }
+}
+@media(max-width:670px) {
+  #footer{
+    height: 498px !important;
+  }
+}

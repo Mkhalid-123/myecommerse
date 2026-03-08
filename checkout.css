@@ -1,53 +1,80 @@
-#personal_information{
-    display: flex;
-    background-color: white;
-    border-radius: 5px;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-evenly;
-} #personal_information div {
-    display: flex;
-    justify-content: space-between;
-}#ss{
+#ss{
     display: flex;
     justify-content: space-evenly;
-}@media(max-width:950px) and (min-width:670px){
-#personal_information{
-    height: 161px !important;
+}
+/* personal information */
+body{
+    font-family: Arial, sans-serif;
+    background:#f3f4f6;
+    height: 900px;
+}
+
+.info-box{
+    width:30%;
+    padding:25px;
+    background:white;
+    border-radius:10px;
+    margin-left: 38px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.info-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box label{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.input-box input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.input-box input:focus{
+    outline:none;
+    border-color:#4CAF50;
+}
+
+.submit-btn{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.submit-btn:hover{
+    background:#43a047;
+}
+@media(max-width:700px){
+
+.info-box {
+    margin-top: 10px;
+    width: 90%;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 #ss{
-    height: 639px;
-    display: flex;
+    height: 1200px;
     flex-direction: column;
 }
+}  @media(max-width:700px){
     body {
-        height: 1239px !important;
+        height: 100px !important;
     }
 }
-@media(max-width:670px) and (min-width:440px) {
-#personal_information{
-    height: 161px !important;
-}
-#ss{
-    height: 639px;
-    display: flex;
-    flex-direction: column;
-}
-    body {
-        height: 1344px !important;
-    }
-}
-@media(max-width:440px)  {
-#personal_information{
-    height: 161px !important;
-}
-#ss{
-    height: 639px;
-    display: flex;
-    flex-direction: column;
-}
-    body {
-        height: 1389px !important;
-    }
-}
-/* button */

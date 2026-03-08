@@ -83,3 +83,41 @@
 
     }
  }
+ @media(max-width:700px) and (min-width:670px){
+    body{
+        height: 1800px !important;
+    }
+ } @media(max-width:670px) and (min-width:441px){
+    body{
+        height: 1905px !important;
+    }
+ }
+ @media(max-width:441px){
+    body{
+     height: 1950px !important;
+    }
+ }
+ /* delete button */
+ .delete-btn{
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff4d4d, #e60000);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.delete-btn:active{
+    transform: scale(0.95);
+    background: linear-gradient(135deg, #e60000, #b30000);
+}#d{
+    padding: 80px;
+}@media(max-width:444px){
+    #d{
+        padding: 10px;
+    }
+}
